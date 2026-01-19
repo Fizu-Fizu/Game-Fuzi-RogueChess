@@ -1,0 +1,62 @@
+# 核心规则：所有文件默认视为文本，并统一转换为 LF 行尾，但二进制文件除外。
+* text=auto eol=lf
+
+# ---------- Unity 特有的二进制文件 (必须设为 binary，Git 不进行任何转换) ----------
+# 这些文件内部有特定格式，换行符转换会损坏它们。
+*.unity binary
+*.prefab binary
+*.asset binary
+*.meta binary
+*.mat binary
+*.anim binary
+*.controller binary
+*.physicMaterial binary
+*.physicMaterial2D binary
+*.unitypackage binary
+*.cubemap binary
+*.flare binary
+*.fontsettings binary
+*.guiskin binary
+*.mask binary
+
+# ---------- 编译输出和第三方库 (二进制) ----------
+*.dll binary
+*.so binary
+*.dylib binary
+*.bundle binary
+*.exe binary
+*.a binary
+
+# ---------- 图片、音视频等媒体文件 (二进制) ----------
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.bmp binary
+*.tiff binary
+*.psd binary
+*.mp3 binary
+*.wav binary
+*.ogg binary
+*.mp4 binary
+*.mov binary
+*.fbx binary
+*.blend binary
+*.mb binary
+*.ma binary
+*.obj binary
+
+# ---------- 纯文本文件 (明确指定为文本，使用LF) ----------
+# 这些是真正的文本文件，Git 可以安全地进行行尾转换。
+*.cs text
+*.js text
+*.ts text
+*.json text
+*.xml text
+*.yaml text
+*.yml text
+*.txt text
+*.md text
+*.sh text
+*.gitignore text
+.gitattributes text

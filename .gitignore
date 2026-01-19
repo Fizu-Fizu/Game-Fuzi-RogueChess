@@ -1,0 +1,53 @@
+# =============== Unity 自动生成文件夹 ===============
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+
+# =============== 项目设置（排除用户文件） ===============
+/[Pp]rojectSettings/ProjectSettings.asset.user
+/[Pp]rojectSettings/EditorBuildSettings.asset.user
+
+# =============== 内存分析器和缓存文件 ===============
+*.snap
+*.uss
+/[Aa]ssets/AssetStoreTools*
+/.assetstore*
+
+# =============== IDE 和编辑器文件 ===============
+.vs/
+.vscode/
+.idea/
+*.csproj
+*.sln
+*.suo
+*.user
+*.userprefs
+.vsconfig
+
+# =============== 操作系统元文件 ===============
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+[Tt]humbs.db
+
+# =============== 其他可选项（按需取消注释） ===============
+# 忽略 WebGL 模板（通常很大）
+# /[Aa]ssets/WebGLTemplates/
+
+# 忽略 StreamingAssets 内容（如需保留文件夹结构，使用下一行）
+# /[Aa]ssets/StreamingAssets/*
+# !/[Aa]ssets/StreamingAssets/.gitkeep
+
+# 忽略特定大型原始文件（如果团队有专门存储库）
+# *.psd
+# *.tga
+# *.fbx
+# *.mp4
+# *.wav
